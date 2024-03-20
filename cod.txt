@@ -1,0 +1,5 @@
+SELECT contactName, city, country
+FROM customers
+UNION
+SELECT  contactName, city, country
+FROM suppliers

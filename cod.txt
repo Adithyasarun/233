@@ -3,3 +3,20 @@ FROM customers
 UNION
 SELECT  contactName, city, country
 FROM suppliers
+
+
+
+WITH query_1 AS
+(
+SELECT customers. last _ name as customer last name, customers.phone as customer_phone,
+as order_id FROM customers 
+INNER JOIN company_orders ON customers customer id
+),
+query _2 AS(
+SELECT company_products.name as product_name, suppliers. contact _ name
+as order items.order id FROM order items INNER JOIN company_products
+company_orders.id
+ON company_products. INNER JOIN suppliers ON suppliers. supplier id
+)
+SELECT DISTINCT query_l.query_l.vustomer_phone, query _ 2.
+FROM query_l INNER JOIN query_2 ON query_2.order_id
